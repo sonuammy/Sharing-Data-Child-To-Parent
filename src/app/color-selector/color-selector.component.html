@@ -1,0 +1,8 @@
+<div class="box">
+  <select [(ngModel)]="SelectedColor">
+   <option [ngValue]="color" *ngFor="let color of colors">{{color}}</option>
+  </select>
+  <br>
+  <br>
+  <button (click)="ColorSelected()">Change</button>
+  </div>

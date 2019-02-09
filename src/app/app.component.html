@@ -1,0 +1,8 @@
+<div class="parent">
+  <h1>
+    {{ message }}
+  </h1>
+  <div class="main_box" [style.background]="color">
+    <app-color-selector (ColorChanged)="ColorChangedHandler($event)"></app-color-selector>
+  </div> 
+</div>
